@@ -4,11 +4,12 @@
     <ul>
       <li><router-link to="/contador">Contador</router-link></li>
       <li><router-link to="/list-tasks">Lista de tareas</router-link></li>
+      <li><router-link to="/register">Registrar</router-link></li>
     </ul>
   </div>
 </template>
 <script setup></script>
-<style>
+<style scoped>
 .sidebar {
   width: 200px;
   background-color: #f0f0f0;
