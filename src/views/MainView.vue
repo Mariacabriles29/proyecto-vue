@@ -1,13 +1,20 @@
 <template>
+  <Header :message="textoHola"></Header>
+
   <div class="container">
     <Sidebar></Sidebar>
     <div class="content">
+      <input type="text" v-model="text" />
+      {{ text }}
       <router-view></router-view>
     </div>
   </div>
 </template>
 <script setup>
 import Sidebar from "../components/Sidebar.vue";
+import Header from "../components/Header.vue";
+import { ref } from "vue";
+const text = ref("");
 </script>
 <style>
 .container {
