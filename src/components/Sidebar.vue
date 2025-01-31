@@ -17,6 +17,7 @@ import { ref, watch } from "vue";
 const registerStore = useRegisterStore();
 const nombre = ref(registerStore.nombre.value);
 const email = ref(registerStore.email.value);
+//esccuha los cambios del store
 watch(
   () => registerStore.nombre,
   (newValue) => {
